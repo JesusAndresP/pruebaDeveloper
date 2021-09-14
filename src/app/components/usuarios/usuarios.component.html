@@ -1,0 +1,35 @@
+
+<h2>Usuarios</h2>
+<div class="container">
+
+</div>
+<div class="container">
+
+  <div class="table-responsive-sm">
+    <table class="table">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Website</th>
+        <th>Company</th>
+      </tr>
+      <tr *ngFor="let com of lstusuarios">
+        <td> {{com.id}} </td>
+        <td> {{com.name}} </td>
+        <td> {{com.username}} </td>
+        <td> {{com.email}} </td>
+        <td> {{com.address}} </td>
+        <td> {{com.phone}} </td>
+        <td> {{com.website}} </td>
+        <td> {{com.company}} </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<script>
+</script>
+<router-outlet></router-outlet>
