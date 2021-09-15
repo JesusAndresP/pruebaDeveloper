@@ -1,0 +1,23 @@
+<h2>Albumes</h2>
+
+<div class="container">
+
+  <div class="table-responsive-sm">
+    <table class="table">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Username</th>
+      </tr>
+      <tr *ngFor="let com of lstalbumes">
+        <td> {{com.userId}} </td>
+        <td> {{com.id}} </td>
+        <td> {{com.title}} </td>
+        <td><img src="https://picsum.photos/100/100"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<script>
+</script>
+<router-outlet></router-outlet>

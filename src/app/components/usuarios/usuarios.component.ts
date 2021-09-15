@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {MatTableDataSource} from '@angular/material/table';
 import { FreeapiService } from '../../services/freeapi.service';
 import { Usuarios } from '../../classes/usuarios';
 
@@ -34,11 +33,6 @@ export class UsuariosComponent implements OnInit {
         this.lstusuarios = data;
       }
     );
-  }
-  applyFilter(event: Event) {
-    
-const filterValue = (event.target as HTMLInputElement).value;
-
   }
   
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import{Imagenes} from '../../classes/imagenes';
+import { FreeapiService } from '../../services/freeapi.service';
 
 @Component({
   selector: 'app-inicio',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _freeApiService: FreeapiService) { }
+
+  lstImagenes:Imagenes[]=[]
 
   ngOnInit(): void {
+    this._freeApiService.getUsuarios()
+    .subscribe
+    (
+       data=> 
+      {
+        console.log(data);
+        this.lstImagenes = data;
+      }
+    );
   }
 
 }

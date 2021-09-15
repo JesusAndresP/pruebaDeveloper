@@ -9,17 +9,20 @@ import { UsuariosComponent } from './components/usuarios/usuarios.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FreeapiService } from './services/freeapi.service';
-import { PublicacionesComponent } from './components/publicaciones/publicaciones.component';
+import { PublicacionComponent } from './components/publicacion/publicacion.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { AlbumesComponent } from './components/albumes/albumes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsuariosComponent,
-    PublicacionesComponent,
+    PublicacionComponent,
     InicioComponent,
-    NavbarComponent
+    NavbarComponent,
+    AlbumesComponent,
+    PublicacionComponent
   ],
   imports: [
     BrowserModule,
